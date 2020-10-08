@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'magnetics';
-  private func(
-    reallyLongArg,
-    omgSoManyParameters,
-    IShouldRefactorThis,
-    isThereSeriouslyAnotherOne,
-  ): any {
-    console.log('rrrrr');
-  }
 }
