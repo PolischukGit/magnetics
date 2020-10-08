@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  margin: 0;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+.error-block {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+}

@@ -1,0 +1,28 @@
+<section>
+  <mat-card>
+    <form [formGroup]="loginFormGroup" (ngSubmit)="submit()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Login</mat-label>
+          <input matInput placeholder="Placeholder"
+                 formControlName="login" label="login">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>user</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Placeholder" type="password"
+                 formControlName="password" label="password">
+          <mat-icon matSuffix>lock</mat-icon>
+          <mat-hint>1234567890</mat-hint>
+        </mat-form-field>
+      </p>
+      <p *ngIf="error$|async as error" class="error-block">{{error}}</p>
+      <p>
+        <button mat-raised-button color="primary" type="submit">LOGIN</button>
+      </p>
+    </form>
+  </mat-card>
+</section>
